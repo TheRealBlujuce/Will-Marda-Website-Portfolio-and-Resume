@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About Me - Will Marda</title>
+        <link href="styles_output.css" rel="stylesheet">
+        <!-- https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css -->
+        <style>
+            body {
+                display: flex;
+                flex-direction: column;
+                min-height: 100vh;
+            }
+            main {
+                flex: 1;
+            }
+        </style>
+    </head>
+    <body class="bg-gray-900 text-white">
+        <header class="text-white py-6">
+            <div class="container mx-auto flex flex-wrap justify-between items-center">
+                <h1 class="text-8xl sm:text-5xl md:text-6xl lg:text-8xl font-bold">Will Marda</h1>
+        
+                <!-- Hamburger Icon for Small Screens (hidden on larger screens) -->
+                <button id="hamburger" class="block md:hidden p-2 absolute top-4 right-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+        
+                <!-- Menu (hidden on small screens, visible on larger screens) -->
+                <div id="menu" class="flex space-x-8 md:space-x-6 mt-4 md:mt-0 hidden md:flex transition-all duration-300 transform md:translate-x-0 fixed top-[-1.25%] right-0 w-full h-full sm:bg-transparent bg-gray-800 text-white flex-col md:flex-row md:static md:w-auto">
+                    <!-- Close Button (X) -->
+                    <button id="close-menu" class="absolute top-4 left-4 p-2 text-white sm:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+
+                    <a href="index.html" class="p-6 md:w-[164px] w-5/6 h-[48px] text-xl font-bold scale-[100%] hover:scale-[115%] hover:bg-gray-700 
+                    hover:text-teal-300 flex items-center justify-center rounded-2xl transition duration-[0.2s] mt-6 md:mt-0">About Me</a>
+
+                    <a href="resume.html" class="p-6 md:w-[164px] w-5/6 h-[48px] text-xl font-bold scale-[100%] hover:scale-[115%] hover:bg-gray-700 
+                    hover:text-teal-300 flex items-center justify-center rounded-2xl transition duration-[0.2s] mt-[6rem] md:mt-0">Resume</a>
+    
+                </div>
+            </div>
+        </header>
+        
+
+        <main class="container mx-auto my-8 p-4">
+            <section class="mb-8">
+                <h2 class="text-teal-300 text-2xl md:text-3xl font-bold mb-4">About Me</h2>
+                <div class="bg-gray-700 shadow-md rounded-xl p-6 mb-4">
+                    <p class="text-base md:text-lg mb-4">
+                        Hi, I’m Will Marda, a passionate software developer with extensive experience in creating innovative solutions, ranging from web and mobile applications to video games. My journey in technology began in 2009, and since then, I’ve been dedicated to mastering programming languages like C#, JavaScript, HTML, and CSS, as well as tools and frameworks such as GitHub, DevOps, Firebase, and Tailwind CSS.
+                    </p>
+                    <p class="text-base md:text-lg mb-4">
+                        I’ve worked in various roles, including as a contractor at Zerin Technologies, where I contributed to the Family Tools app, and as a teacher at Milisan School, helping young minds learn game development and animation. My experience also includes a long tenure as a Technical Support Engineer at BYU-Pathway Worldwide, ensuring seamless student experiences through bug verification and reporting.
+                    </p>
+                    <p class="text-base md:text-lg mb-4">
+                        Beyond work, I’m deeply committed to continuous learning. I have completed both an Associate's Degree and a Bachelor’s Degree in Software Development at BYU-Idaho, complementing my certificates in Web and Computer Programming, Web Development, and Software Development. My goal is to create impactful software that blends functionality with creativity.
+                    </p>
+                    <p class="text-base md:text-lg">
+                        Outside of coding, I enjoy exploring new technologies, mentoring aspiring developers, crafting personal projects that push the boundaries of innovation. I also paint miniatures for a game call Warhammer 40k and enjoy playing videogames and try to figure out how gameplay mechanics were coded and implemented. Let’s connect and build something amazing together!
+                    </p>
+                </div>
+            </section>
+        </main>
+
+        <footer class="bg-gray-800 text-white py-4 text-center">
+            <p class="text-sm md:text-base">Will Marda Copyright 2025</p>
+        </footer>
+
+        <script src="smallnav.js"></script>
+
+    </body>
+</html>

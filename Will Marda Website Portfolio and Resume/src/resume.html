@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Will Marda - Resume</title>
+        <link href="styles_output.css" rel="stylesheet">
+        <!-- https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css -->
+    </head>
+    <body class="bg-gray-900 text-white">
+        <header class="text-white py-6">
+            <div class="container mx-auto flex flex-wrap justify-between items-center">
+                <h1 class="text-8xl sm:text-5xl md:text-6xl lg:text-8xl font-bold">Will Marda</h1>
+        
+                <!-- Hamburger Icon for Small Screens (hidden on larger screens) -->
+                <button id="hamburger" class="block md:hidden p-2 absolute top-4 right-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+        
+                <!-- Menu (hidden on small screens, visible on larger screens) -->
+                <div id="menu" class="flex space-x-8 md:space-x-6 mt-4 md:mt-0 hidden md:flex transition-all duration-300 transform md:translate-x-0 fixed top-[-1.25%] right-0 w-full h-full sm:bg-transparent bg-gray-800 text-white flex-col md:flex-row md:static md:w-auto">
+                    <!-- Close Button (X) -->
+                    <button id="close-menu" class="absolute top-4 left-4 p-2 text-white sm:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+
+                    <a href="index.html" class="p-6 md:w-[164px] w-5/6 h-[48px] text-xl font-bold scale-[100%] hover:scale-[115%] hover:bg-gray-700 
+                    hover:text-teal-300 flex items-center justify-center rounded-2xl transition duration-[0.2s] mt-6 md:mt-0">About Me</a>
+
+                    <a href="resume.html" class="p-6 md:w-[164px] w-5/6 h-[48px] text-xl font-bold scale-[100%] hover:scale-[115%] hover:bg-gray-700 
+                    hover:text-teal-300 flex items-center justify-center rounded-2xl transition duration-[0.2s] mt-[6rem] md:mt-0">Resume</a>
+    
+                </div>
+            </div>
+        </header>
+        
+        
+
+        <main class="container mx-auto my-8 px-4">
+            <section class="mb-8">
+                <h2 class="text-3xl text-teal-300 font-bold mb-4">Summary of Skills</h2>
+                <ul class="list-disc pl-6 text-lg space-y-2">
+                    <li><strong>Programming Languages:</strong> C#, JavaScript, HTML, CSS</li>
+                    <li><strong>Tools & Frameworks:</strong> GitHub, DevOps, Firebase, Tailwind CSS, ASP.Net, Node.js, Express</li>
+                    <li><strong>Development Methodologies:</strong> Scrum, Agile, Waterfall</li>
+                    <li><strong>Additional Proficiencies:</strong> Debugging, Project Planning, Organization</li>
+                    <li><strong>Languages:</strong> English (Fluent), Spanish (Fluent)</li>
+                </ul>
+            </section>
+
+            <section class="mb-8">
+                <h2 class="text-3xl text-teal-300 font-bold mb-4">Completed Projects</h2>
+                <div class="bg-gray-700 shadow-md rounded-xl p-6 mb-4">
+                    <h3 class="text-2xl font-semibold">Bugtracker</h3>
+                    <p>Designed and developed a bug tracking tool using Angular, Firebase (including Firebase Auth), Tailwind CSS, Node.js, and Express.</p>
+                    <p>Implemented real-time CRUD functionality using Firebase to allow users to create, update, and delete bugs seamlessly.</p>
+                    <p>Deployed the project on Render (free tier), with plans to enhance functionality by adding features such as a signup page and a resolved bugs page.</p>
+                    <p><a href="https://bugtracker-iqs6.onrender.com/" class="text-teal-300 hover:underline" target="_blank">Link: Bugtracker</a> (Only works on large screen sizes) | Test Credentials: Email: user@test.com, Password: 123123</p>
+                </div>
+
+                <h2 class="text-3xl text-teal-300 font-bold mb-4">Ongoing Projects</h2>
+                <div class="bg-gray-700 shadow-md rounded-xl p-6 mb-4">
+                    <h3 class="text-2xl font-semibold">Olgore</h3>
+                    <h4 class=" text-gray-200 text-md font-semibold">ARPG inspired by Diablo and Hyper Light Drifter</h4>
+                    <p>As an orc samurai, after his lord was killed by oni, you travel around the continent cleansing shrines of evil spirits to restore your honor and your clan.</p>
+                </div>
+                <div class="bg-gray-800 shadow-md rounded-xl p-6 mb-4">
+                    <h3 class="text-2xl font-semibold">Monster Valley</h3>
+                    <h4 class=" text-gray-200 text-md font-semibold">Monster Tamer / Farming game inspired by Pokemon and Stardew Valley.</h4>
+                    <p>You inherit a home and a small plot of farmland from your parents where you tame Pemo, farm crops, and figure out the mysteries of the mysterious Monster Valley.</p>
+                </div>
+            </section>
+
+            <section class="mb-8">
+                <h2 class="text-2xl text-teal-300 font-bold mb-4">Experience</h2>
+                <div class="bg-gray-800 shadow-md rounded-xl p-6 mb-4">
+                    <h3 class="text-xl font-semibold">Contractor</h3>
+                    <p><strong>Zerin Technologies | September 2024 &ndash; Present</strong></p>
+                    <p>Coded features for the Family Tools app using Luxon, Svelte, JavaScript, and styled components with Tailwind CSS.</p>
+                    <p>Collaborated with team members using Basecamp and submitted pull requests via GitHub.</p>
+                </div>
+                <div class="bg-gray-700 shadow-md rounded-xl p-6 mb-4">
+                    <h3 class="text-xl font-semibold">Teacher</h3>
+                    <p><strong>Milisan School | September 2024 &ndash; Present</strong></p>
+                    <p>Taught students aged 8-14 how to create games in Roblox Studio and Gamemaker Studio, and 2D animation in Piskel.</p>
+                </div>
+                <div class="bg-gray-800 shadow-md rounded-xl p-6 mb-4">
+                    <h3 class="text-xl font-semibold">Technical Support Engineer</h3>
+                    <p><strong>BYU-Pathway Worldwide | August 2018 &ndash; September 2024</strong></p>
+                    <p>Verified and reported bugs in online student tools to the development team using DevOps, ensuring seamless student experiences.</p>
+                    <p>Collaborated with cross-functional teams to enhance tool reliability and functionality.</p>
+                </div>
+                <div class="bg-gray-700 shadow-md rounded-xl p-6 mb-4">
+                    <h3 class="text-xl font-semibold">Independent Developer</h3>
+                    <p><strong>December 2009 &ndash; Present</strong></p>
+                    <p>Created and maintained various personal projects, including video games, software, mobile apps, and websites.</p>
+                    <p>Utilized programming languages and frameworks such as C#, HTML, CSS, JavaScript, and APIs.</p>
+                </div>
+            </section>
+
+            <section class="mb-8">
+                <h2 class="text-2xl text-teal-300 font-bold mb-4">Education</h2>
+                <ul class="list-disc pl-6 space-y-2">
+                    <li><strong>Bachelor of Software Development:</strong> BYU-Idaho | Winter 2025</li>
+                    <li><strong>Associate Degree in Software Development:</strong> BYU-Idaho | Winter 2024</li>
+                    <li><strong>Certificates:</strong> Web and Computer Programming (Winter 2023), Web Development (Spring 2023), Software Development (Fall 2024)</li>
+                </ul>
+            </section>
+
+            <section class="mb-4">
+                <h2 class="text-2xl text-teal-300 font-bold mb-4">Relevant Courses</h2>
+                <div class="space-y-4">
+                    <div class="bg-gray-700 shadow-md rounded-xl p-6 mb-4">
+                        <h3 class="text-xl font-semibold text-teal-300">.Net Software Development</h3>
+                        <p>Learn the fundamentals of software development using the .NET framework, focusing on building web and desktop applications.</p>
+                    </div>
+                    <div class="bg-gray-800 shadow-md rounded-xl p-6 mb-4">
+                        <h3 class="text-xl font-semibold text-teal-300">Programming Fundamentals</h3>
+                        <p>Introduction to programming concepts, including variables, control structures, and basic algorithms, using languages like C#.</p>
+                    </div>
+                    <div class="bg-gray-700 shadow-md rounded-xl p-6 mb-4">
+                        <h3 class="text-xl font-semibold text-teal-300">Programming with Classes</h3>
+                        <p>Explore object-oriented programming (OOP) principles such as classes, inheritance, and polymorphism to design efficient software solutions.</p>
+                    </div>
+                    <div class="bg-gray-800 shadow-md rounded-xl p-6 mb-4">
+                        <h3 class="text-xl font-semibold text-teal-300">JavaScript</h3>
+                        <p>Learn JavaScript programming for creating interactive web applications, including working with DOM manipulation and asynchronous programming.</p>
+                    </div>
+                    <div class="bg-gray-700 shadow-md rounded-xl p-6 mb-4">
+                        <h3 class="text-xl font-semibold text-teal-300">Web Frontend & Backend Development</h3>
+                        <p>Gain expertise in both frontend and backend web development, using HTML, CSS, JavaScript, and server-side technologies like Node.js.</p>
+                    </div>
+                    <div class="bg-gray-800 shadow-md rounded-xl p-6 mb-4">
+                        <h3 class="text-xl font-semibold text-teal-300">Web Services</h3>
+                        <p>Study the development and consumption of web services, including RESTful APIs and SOAP, for building scalable applications.</p>
+                    </div>
+                    <div class="bg-gray-700 shadow-md rounded-xl p-6 mb-4">
+                        <h3 class="text-xl font-semibold text-teal-300">Mobile Development</h3>
+                        <p>Focus on developing mobile applications using platforms like Android and iOS, learning about user interfaces and mobile APIs.</p>
+                    </div>
+                    <div class="bg-gray-800 shadow-md rounded-xl p-6 mb-4">
+                        <h3 class="text-xl font-semibold text-teal-300">Full-Stack Development</h3>
+                        <p>Learn how to develop both the frontend and backend of web applications, integrating databases, APIs, and user interfaces.</p>
+                    </div>
+                    <div class="bg-gray-700 shadow-md rounded-xl p-6 mb-4">
+                        <h3 class="text-xl font-semibold text-teal-300">Programming Design & Graphics</h3>
+                        <p>Explore the creation of graphical user interfaces (GUIs) and the use of design principles in software development for visual appeal.</p>
+                    </div>
+                    <div class="bg-gray-800 shadow-md rounded-xl p-6 mb-4">
+                        <h3 class="text-xl font-semibold text-teal-300">Systems Analysis & Design</h3>
+                        <p>Learn how to analyze and design information systems, focusing on requirements gathering, modeling, and software design techniques.</p>
+                    </div>
+                    <div class="bg-gray-700 shadow-md rounded-xl p-6 mb-4">
+                        <h3 class="text-xl font-semibold text-teal-300">Game Development</h3>
+                        <p>Study the principles of game design and development, including game engines, 2D/3D graphics, and interactive programming techniques.</p>
+                    </div>
+                    <div class="bg-gray-800 shadow-md rounded-xl p-6 mb-4">
+                        <h3 class="text-xl font-semibold text-teal-300">Windows Application Development</h3>
+                        <p>Learn how to develop applications for the Windows platform, including user interfaces, database integration, and software deployment.</p>
+                    </div>
+                    <div class="bg-gray-700 shadow-md rounded-xl p-6 mb-4">
+                        <h3 class="text-xl font-semibold text-teal-300">Agile Project Management</h3>
+                        <p>Study agile methodologies for managing software projects, focusing on Scrum, Kanban, and iterative development processes.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-8">
+                <h2 class="text-2xl text-teal-300 font-bold mb-4">Refences</h2>
+                <div class="bg-gray-700 shadow-md rounded-xl p-6 mb-4">
+                    <p>References are available upon request.</p>
+                </div>
+            </section>
+        </main>
+   
+        <footer class="bg-gray-800 text-white py-4 text-center">
+            <p class="text-sm md:text-base">Will Marda Copyright 2025</p>
+        </footer>
+    
+        <script src="smallnav.js"></script>
+
+    </body>
+</html>
