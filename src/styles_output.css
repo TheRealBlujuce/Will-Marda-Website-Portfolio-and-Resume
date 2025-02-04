@@ -775,6 +775,14 @@ video {
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
+.self-center {
+  align-self: center;
+}
+
+.justify-self-center {
+  justify-self: center;
+}
+
 .rounded-2xl {
   border-radius: 1rem;
 }
@@ -785,6 +793,14 @@ video {
 
 .rounded-xl {
   border-radius: 0.75rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.rounded-3xl {
+  border-radius: 1.5rem;
 }
 
 .bg-gray-700 {
@@ -944,6 +960,19 @@ video {
 }
 
 @media (min-width: 640px) {
+  .sm\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .sm\:ml-\[2rem\] {
+    margin-left: 2rem;
+  }
+
+  .sm\:ml-\[6rem\] {
+    margin-left: 6rem;
+  }
+
   .sm\:hidden {
     display: none;
   }
