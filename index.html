@@ -4,20 +4,10 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>About Me - Will Marda</title>
-        <link href="styles_output.css" rel="stylesheet">
-        <!-- https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css -->
-        <style>
-            body {
-                display: flex;
-                flex-direction: column;
-                min-height: 100vh;
-            }
-            main {
-                flex: 1;
-            }
-        </style>
+        <link href="src/styles_output.css" rel="stylesheet">
+
     </head>
-    <body class="bg-gray-900 text-white">
+    <body class="bg-gray-900 text-white flex flex-col min-h-screen">
         <header class="text-white py-6">
             <div class="container mx-auto flex flex-wrap justify-between items-center">
                 <h1 class="text-8xl sm:text-5xl md:text-6xl lg:text-8xl font-bold">Will Marda</h1>
@@ -39,17 +29,17 @@
                     </button>
 
                     <a href="index.html" class="p-6 md:w-[164px] w-5/6 h-[48px] text-xl font-bold scale-[100%] hover:scale-[115%] hover:bg-gray-700 
-                    hover:text-teal-300 flex items-center justify-center rounded-2xl transition duration-[0.2s] mt-6 md:mt-0">About Me</a>
+                    hover:text-teal-300 flex items-center justify-center rounded-2xl transition duration-[0.2s] mt-[6rem] md:mt-0">About Me</a>
 
                     <a href="resume.html" class="p-6 md:w-[164px] w-5/6 h-[48px] text-xl font-bold scale-[100%] hover:scale-[115%] hover:bg-gray-700 
-                    hover:text-teal-300 flex items-center justify-center rounded-2xl transition duration-[0.2s] mt-[6rem] md:mt-0">Resume</a>
+                    hover:text-teal-300 flex items-center justify-center rounded-2xl transition duration-[0.2s] mt-[2rem] md:mt-0">Resume</a>
     
                 </div>
             </div>
         </header>
         
 
-        <main class="container mx-auto my-8 p-4">
+        <main class="container mx-auto my-8 p-4 flex-1">
             <section class="mb-8">
                 <div class="flex flex-col md:flex-row items-start gap-6">
                     <!-- Image Section -->
